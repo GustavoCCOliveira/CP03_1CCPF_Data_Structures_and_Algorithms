@@ -22,4 +22,12 @@ int main() {
     contas[2].numeroConta = 1003;
     strcpy(contas[2].senha, "senha3");
     contas[2].saldo = 850.75;
+ 
+    int numeroConta;
+    char senha[20];
+
+    int indiceConta;
+    int opcao;
+
+    float valor;
     }
