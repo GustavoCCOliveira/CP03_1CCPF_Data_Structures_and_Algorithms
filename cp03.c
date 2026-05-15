@@ -88,6 +88,52 @@ int main() {
                             printf("Saque realizado.\n");
                             printf("Novo saldo: R$ %.2f\n",
                             contas[indiceConta].saldo);
+                            } else {
+ 
+                                printf("Saldo insuficiente.\n");
+ 
+                            }
+ 
+                            break;
+ 
+                        case 3:
+ 
+                            printf("Digite o valor do deposito: ");
+                            scanf("%f", &valor);
+ 
+                            contas[indiceConta].saldo += valor;
+ 
+                            printf("Deposito realizado.\n");
+                            printf("Novo saldo: R$ %.2f\n",
+                            contas[indiceConta].saldo);
+ 
+                            break;
+ 
+                        case 4:
+ 
+                            printf("Voltando ao painel inicial...\n");
+ 
+                            break;
+ 
+                        default:
+ 
+                            printf("Opcao invalida.\n");
+ 
+                    }
+ 
+                } while(opcao != 4);
+ 
+            } else {
+ 
+                printf("Senha incorreta.\n");
+ 
             }
-    }
+        }
+ 
+    } while(1);
+ 
+    return 0;
 }
+                        
+            
+    
