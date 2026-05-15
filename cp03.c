@@ -66,6 +66,28 @@ int main() {
                 printf("4 - Voltar ao painel inicial\n");
                 printf("Escolha uma opcao: ");
                 scanf("%d", &opcao);
+
+                switch(opcao) {
+ 
+                    case 1:
+ 
+                        printf("Saldo atual: R$ %.2f\n",
+                        contas[indiceConta].saldo);
+ 
+                        break;
+ 
+                    case 2:
+ 
+                        printf("Digite o valor do saque: ");
+                        scanf("%f", &valor);
+ 
+                        if(valor <= contas[indiceConta].saldo) {
+ 
+                            contas[indiceConta].saldo -= valor;
+ 
+                            printf("Saque realizado.\n");
+                            printf("Novo saldo: R$ %.2f\n",
+                            contas[indiceConta].saldo);
             }
     }
 }
