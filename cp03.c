@@ -60,6 +60,12 @@ int main() {
         if(strcmp(contas[indiceConta].senha, senha) == 0) {
 
             do {
+                  printf("\n--- MENU DA CONTA ---\n");                    printf("1 - Ver saldo\n");
+                printf("2 - Sacar\n");
+                printf("3 - Depositar\n");
+                printf("4 - Voltar ao painel inicial\n");
+                printf("Escolha uma opcao: ");
+                scanf("%d", &opcao);
             }
     }
 }
