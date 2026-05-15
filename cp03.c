@@ -30,4 +30,31 @@ int main() {
     int opcao;
 
     float valor;
+
+        do {
+
+        indiceConta = -1;
+
+        printf("\n--- SEJA BEM VINDO AO ATMONEY ---\n");
+
+        printf("Digite o numero da conta: ");
+        scanf("%d", &numeroConta);
+
+        for(int i = 0; i < 3; i++) {
+
+            if(contas[i].numeroConta == numeroConta) {
+                indiceConta = i;
+                break;
+            }
+        }
+
+        if(indiceConta == -1) {
+
+            printf("Conta nao encontrada.\n");
+
+        } else {
+
+            printf("Digite a senha: ");
+            scanf("%s", senha);
     }
+}
