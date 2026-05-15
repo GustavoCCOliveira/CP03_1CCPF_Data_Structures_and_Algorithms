@@ -56,5 +56,10 @@ int main() {
 
             printf("Digite a senha: ");
             scanf("%s", senha);
+
+        if(strcmp(contas[indiceConta].senha, senha) == 0) {
+
+            do {
+            }
     }
 }
